@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haru Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Bloco principal do gerador -->
+  <div class="container">
+    <h1>Haru Password Generator</h1>
+
+    <!-- Campo que mostra a senha gerada + botão de copiar -->
+    <div class="output-area">
+      <input type="text" id="password" readonly />
+      <button id="copy">📋</button>
+    </div>
+
+    <!-- Botão para gerar nova senha -->
+    <button id="generate">Generate Password</button>
+
+    <!-- Configurações da senha -->
+    <div class="settings">
+      <label>Password length:
+        <input type="range" id="length" min="4" max="24" value="12" />
+        <span id="lengthValue">12</span>
+      </label>
+
+      <label><input type="checkbox" id="uppercase" checked /> Include uppercase letters</label>
+      <label><input type="checkbox" id="numbers" checked /> Include numbers</label>
+      <label><input type="checkbox" id="symbols" checked /> Include symbols</label>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

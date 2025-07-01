@@ -1,0 +1,104 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Cor de fundo geral do site */
+body {
+  background-color: #F4EFEC; /* rosinha claro */
+  color: #999B85; /* texto em cinza oliva */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Caixa principal */
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+/* Título */
+.container h1 {
+  font-size: 1.5rem;
+  color: #999B85;
+}
+
+/* Área de exibição da senha */
+.output-area {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#password {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  font-size: 1rem;
+  color: #999B85;
+  background-color: #F4EFEC;
+}
+
+/* Botão de copiar */
+#copy {
+  background-color: #DDB7AC;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+#copy:hover {
+  background-color: #999B85;
+}
+
+/* Botão de gerar senha */
+#generate {
+  background-color: #DDB7AC;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#generate:hover {
+  background-color: #999B85;
+}
+
+/* Configurações (checkboxes, slider) */
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settings input[type="range"] {
+  flex: 1;
+  margin-left: 1rem;
+}
